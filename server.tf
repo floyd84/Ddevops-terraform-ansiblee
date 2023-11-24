@@ -11,9 +11,9 @@ provider "aws" {
 region = "ap-south-1"
 }
 resource "aws_instance" "myawsserver" {
-  ami = "ami-01a8e3a4c74a2c200"
+  ami = "ami-0287a05f0ef0e9d9a"
   instance_type = "t2.micro"
-  key_name = "raman-import"
+  key_name = "Floyd-keypair"
 
   tags = {
     Name = "Raman-DevOps-batch-server"
